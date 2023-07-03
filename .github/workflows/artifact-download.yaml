@@ -4,7 +4,9 @@ on:
     types: [released]
 jobs:
   upload_artifact:
-      - name: Upload Release Asset
+    runs-on: ventus
+    steps:
+      - name: Upload  Release Asset
         uses: softprops/action-gh-release@v1
         with:
           files: |
