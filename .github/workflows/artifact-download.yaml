@@ -6,6 +6,8 @@ jobs:
   upload_artifact:
     runs-on: ubuntu-latest
     steps:
+      - name: Create Empty File
+        run: touch empty_file.txt
       - name: Create zip
         if: ${{ github.event_name == 'release' }}
         run: |
