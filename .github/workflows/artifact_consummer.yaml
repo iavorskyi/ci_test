@@ -1,6 +1,10 @@
 name: Consume assets
 on:
   workflow_dispatch:
+    inputs:
+      parameter1:
+        description: 'Description for parameter1'
+        required: true
 jobs:
     consume assets:
       runs-on: ventus
