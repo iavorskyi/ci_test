@@ -7,7 +7,7 @@ on:
         required: true
 jobs:
     consume assets:
-      runs-on: ventus
+      runs-on: linux
       steps:
           - name: consume asset
             uses: dsaltares/fetch-gh-release-asset@master
