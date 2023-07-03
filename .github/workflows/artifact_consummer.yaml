@@ -12,7 +12,7 @@ jobs:
           - name: consume asset
             uses: dsaltares/fetch-gh-release-asset@master
             with:
-              repo: 'dsaltares/godot-wild-jam-18'
+              repo: 'iavorskyi/ci_test'
               version: 'tags/v0.0.1'
               file: 'ci_test-0.0.1.zip'
               token: ${{ secrets.MY_PAT }}
