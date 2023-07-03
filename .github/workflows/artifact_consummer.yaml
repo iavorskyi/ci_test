@@ -16,3 +16,5 @@ jobs:
               version: 'tags/v0.0.1'
               file: 'README.md'
               token: ${{ secrets.MY_PAT }}
+          - name : print file
+            run: cat README.md
