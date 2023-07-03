@@ -1,4 +1,4 @@
-name: Trigger gateway
+name: Upload assets
 on:
   release:
     types: [released]

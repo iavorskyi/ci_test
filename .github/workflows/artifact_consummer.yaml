@@ -1,4 +1,4 @@
-name: Trigger gateway
+name: Consume assets
 on:
   workflow_dispatch:
 jobs:
