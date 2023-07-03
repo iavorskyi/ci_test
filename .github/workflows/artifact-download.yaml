@@ -9,7 +9,6 @@ jobs:
       - name: Create Empty File
         run: touch empty_file.txt
       - name: Create zip
-        if: ${{ github.event_name == 'release' }}
         run: |
           zip -r artifacts.zip ./* -x '*.git*'
       - name: Upload  Release Asset
