@@ -14,5 +14,5 @@ jobs:
             with:
               repo: 'iavorskyi/ci_test'
               version: 'tags/v0.0.1'
-              file: 'ci_test-0.0.1.zip'
+              file: 'README.md'
               token: ${{ secrets.MY_PAT }}
