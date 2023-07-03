@@ -1,7 +1,6 @@
 name: Trigger gateway
 on:
-  release:
-    types: [released]
+  workflow_dispatch:
 jobs:
     consume assets:
         uses: dsaltares/fetch-gh-release-asset@master
