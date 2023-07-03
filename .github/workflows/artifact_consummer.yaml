@@ -6,7 +6,7 @@ on:
         description: 'Description for parameter1'
         required: true
 jobs:
-    consume assets:
+    consume_assets:
       runs-on: ubuntu-latest
       steps:
           - name: consume asset
