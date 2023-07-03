@@ -4,7 +4,7 @@ on:
     types: [released]
 jobs:
   upload_artifact:
-    runs-on: linux
+    runs-on: ubuntu-latest
     steps:
       - name: Upload  Release Asset
         uses: softprops/action-gh-release@v1
