@@ -1,9 +1,7 @@
 name: Upload Random Logs
 
 on:
-  push:
-    branches:
-      - main  # Adjust this to match the branch you want to trigger the workflow on
+  workflow_dispatch:
 
 jobs:
   upload_logs:
