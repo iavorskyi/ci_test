@@ -1,0 +1,26 @@
+name: Upload Random Logs
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to match the branch you want to trigger the workflow on
+
+jobs:
+  upload_logs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Create logs directory
+      run: mkdir -p logs
+
+    - name: Generate Random Logs (Empty File)
+      run: echo "Hello, World!" > logs/random_logs.txt  # Replace "Hello, World!" with any desired content
+
+    - name: Upload Logs as Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: random_logs
+        path: logs/random_logs.txt
